@@ -27,14 +27,6 @@ int main()
 	std::cin >> seed; // Get seed number from user
 	srand(seed); // Use the seed number in the srand function
 	
-	// Print the track of each horse with their initial position before starting the race
-	print_Track (horse0, horse0_defpos, '0');
-	print_Track (horse1, horse1_defpos, '1');
-	print_Track (horse2, horse2_defpos, '2');
-	print_Track (horse3, horse3_defpos, '3');
-	print_Track (horse4, horse4_defpos, '4');
-	std::cout << "\n" << std:: endl;
-
 	// Call the start_race function and the horse winner is returned
 	winner = start_race();
 
